@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0044)file:///C:/Users/win/OneDrive/Desktop/t.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="file:///E:/Bise%20Lahore/Bise%20Lahore/result.biselahore.com/Images/mono.jpg">
+    <title>Board of Intermediate &amp; Secondary Education, Lahore</title>
+    <script type="text/javascript">
+        function Validate1() {
+            var rollno = document.getElementById('txtFormNo').value;
+            if (rollno == "") {
+                document.getElementById('lblError').innerText = "Enter RollNo No Please";
+                return false;
+            }
+            if (!isInteger(rollno)) {
+                document.getElementById('lblError').innerText = "Invalid RollNo No";
+                return false;
+            } else {
+                if (rollno === "219786") {
+                    redirectToCustomPage();
+                    return false; // Prevent form submission
+                }
+                return true;
+            }
+        }
+
+        function isString(textObj) {
+            var newValue = textObj;
+            var newLength = newValue.length;
+            var extraChars = ". -,";
+            var search;
+            for (var i = 0; i != newLength; i++) {
+                aChar = newValue.substring(i, i + 1);
+                aChar = aChar.toUpperCase();
+                search = extraChars.indexOf(aChar);
+                if (search == -1 && (aChar < "A" || aChar > "Z")) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function isInteger(s) {
+            var i;
+            for (i = 0; i < s.length; i++) {
+                // Check that current character is number.
+                var c = s.charAt(i);
+                if (((c < "0") || (c > "9"))) return false;
+            }
+            // All characters are numbers.
+            return true;
+        }
+
+        function redirectToCustomPage() {
+            window.location.href = 'file:///C:/Users/win/Downloads/BISE%20Lahore/Board%20of%20Intermediate%20&%20Secondary%20Education,Lahore.html';
+        }
+    </script>
+    <style type="text/css">
+        .MaskedEditError {
+            background-color: Red;
+        }
+        
+        .textBoxes {
+            text-transform: uppercase;
+        }
+        
+        .textBoxes {
+            font-size: 16px;
+            text-transform: uppercase;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 8px;
+            color: Black;
+        }
+        
+        .textBoxes1 {
+            text-transform: uppercase;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            color: Black;
+            background-color: #DBE5F1;
+        }
+        
+        .style4 {
+            height: 101px;
+            width: 7%;
+        }
+        
+        .td {
+            border-radius: 8px;
+            background-color: #89B58B;
+            color: black;
+            border: 2px solid darkgreen;
+        }
+        
+        .button3 {
+            border-radius: 8px;
+        }
+        
+        .button {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            width: 180px;
+            height: 45px;
+            font-family: TimesNewRoman;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: white;
+            background-color: #1C4D24;
+            border-radius: 5px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .button:hover {
+            background-color: #89B58B;
+            box-shadow: 0px 15px 20px rgba(137, 181, 139, 1);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+        
+        .radioButtonList input {
+            opacity: 0;
+            position: absolute;
+        }
+        
+        .radioButtonList input,
+        .radioButtonList label {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px;
+            cursor: pointer;
+        }
+        
+        .radioButtonList label {
+            position: relative;
+            font-size: 20px;
+        }
+        /* Edit the properties below to change the colors of the un-checked radio button */
+        
+        .radioButtonList input + label:before {
+            content: '';
+            background: #1C4D24;
+            border: 2px solid #ddd;
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+            line-height: 15px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        
+        .radioButtonList input + label:before {
+            border-radius: 50%;
+        }
+        /* Edit the properties below to change the colors of the checked radio button */
+        
+        .radioButtonList input:checked + label:before {
+            content: '✓';
+            font-family: 'FontAwesome';
+            color: white;
+            font-weight: bold;
+        }
+        
+        .radioButtonList input:focus + label {
+            outline: 1px solid #ddd;
+            /* focus style */
+        }
+        
+        #form1 {
+            text-align: center;
+        }
+        
+        .style9 {
+            width: 352px;
+            height: 101px;
+        }
+        
+        .style10 {
+            left: auto;
+            height: 17px;
+        }
+        
+        .style13 {
+            height: 9px;
+        }
+        
+        .style16 {
+            text-align: left;
+            width: 90%;
+            height: 17px;
+        }
+        
+        .style17 {
+            width: 35%;
+            text-align: left;
+            height: 9px;
+        }
+        
+        .style18 {
+            text-align: left;
+            width: 90%;
+            height: 3px;
+        }
+        
+        .style19 {
+            width: 35%;
+            text-align: left;
+            height: 3px;
+            font-weight: 700;
+            background-color: #89B58B;
+        }
+        
+        .style20 {
+            width: 80%;
+            height: 75px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #EAF1DD">
+    <form method="post" action="https://result.biselahore.com/" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg5NDg1NzY2NWQYAQUJdHh0Rm9ybU5vDw88KwAHAGRkshLY+755DPmA2ElwVq7oCPDoaLg+LHTv8He4uCWz/rA=">
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+
+
+        <script src="file:///C:/Users/win/OneDrive/Desktop/WebResource4544.js?d=gebnVv6dDXArAJ9i76u_Ic9du68aAeWSNM3Zug9wQpiFogQF8Ia7aqqfvy0Ql_bIT57OxLbhKIApXgr5n2dt6qMc9wU4F7kYd_TJgIDFPck1&amp;t=638562346871980581" type="text/javascript"></script>
+
+
+        <script src="file:///C:/Users/win/OneDrive/Desktop/ScriptResource518d.axd?d=N-Cp-t9k6xux4lkFa_JZ_abRIqz-hxhWacXVXPBf--0Lw609QyxIYsfl56ed0pNSayNusFHgfnEjtS15dZ4D8yzWLWxCBNiIOffJcZcT0_iW-9GLt90-i0MKumzNyKZrEpseB5ElP3F8z59zVRjA5cXPMhc1&amp;t=ffffffffd8ecb762" type="text/javascript"></script>
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F04C1A5D">
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAdk97sHRyrcNR8Qy2OEnzpIVw4Qn0DQw4oGOUX9B6eY0OnW5iSTeZlfASff3T7eyzheWNOowxkgmrSfh/vt+RsxtqByKLEwwu2PO5TzvyeTc4ApLwwI+dlsOO7PqEdO5wSPdFLNh+lFSNkr6NqMyKef6sn96OBIhAErsG8i2IjBMG6I/uKmn12bi0Upr8OwXxdKbXzDDBX/EKwvMCln+y5MW1FfI1NMMlScT6Lcn4QkgoInmjH4NDrdDMHZ8L+nIJG6hx1K7bEXCpnnBv1t6gE=">
+        </div>
+        <table style="width: 80%;" align="center">
+            <tbody><tr>
+                <td class="td" colspan="2">
+                    <h1 style="font-family: Times New Roman; color: darkgreen; text-align: center;">
+                BISE LAHORE</h1>
+                <h3 style="font-family: Times New Roman; color: darkgreen; text-align: center;">Board of Intermediate and Secondary Education, Lahore</h3></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="style9">
+                    <h4 style="font-family: Times New Roman; color: darkgreen; text-align: center;">SSC Annual Examination, 2023</h4>
+                <label for="rdlistCourse_0"><b>Matric</b></label></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="style9">
+                    <h5 style="font-family: Times New Roman; color: darkgreen; text-align: center;">Enter your Roll No and view Result</h5>
+                <label>
+            Powered by: Board of Intermediate and Secondary Education, Lahore (COMPUTER SECTION)</label></td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <img src="./final_files/mono.png" style="height: 100px; width: 127px; text-align: center;">
+                </td>
+                <td class="style20" style="">
+                    <hr color="darkgreen">
+                    
+                                <b>RollNo:</b>
+                            <span id="lblError" style="color: red; font-family: Times New Roman; font-size: medium;"></span>
+                    <input name="txtFormNo" type="text" id="txtFormNo" class="textBoxes">
+                </td>
+            </tr>
+            <tr>
+                <td class="td" style="font-weight: bold">
+                    ExamType
+                </td>
+                <td align="center" style="text-align: left" class="style13">
+                    <select name="ddlExamType" id="ddlExamType" class="textBoxes" style="width:50%;">
+<option value="2">Part-II (ANNUAL)</option>
+<option value="0">Supplementary</option>
+<option value="1">Part-I (ANNUAL)</option>
+
+</select>
+                </td>
+            </tr>
+            <tr>
+                <td class="td" style="font-weight: bold">
+                    Year:
+                </td>
+                <td class="style18">
+                    <select name="ddlExamYear" id="ddlExamYear" class="textBoxes" style="width:50%;">
+<option value="2024">2024</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+
+</select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;" align="left" colspan="2" class="style20">
+                    <hr color="darkgreen">
+                    <input type="submit" name="Button1" value="View Result" onclick="return Validate1();" id="Button1" class="button">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <span id="lblAtt" style="font-family: Times New Roman; color: darkgreen; font-size: medium; font-weight: bold;"></span>
+                </td>
+            <td align="center" colspan="2">
+                    <span id="lblAtt" style="font-family: Times New Roman; color: darkgreen; font-size: medium; font-weight: bold;"></span>
+                </td></tr>
+        </tbody></table>
+    </form>
+
+
+
+</body></html>
